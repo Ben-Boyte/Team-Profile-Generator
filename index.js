@@ -16,9 +16,9 @@ function runApp () {
     function createTeam () {
       inquirer.prompt([{
         type: "list",
-        message: "What type of employees would you like to add to your team?",
+        message: "What type of members would you like to add to your team?",
         name: "addEmployeePrompt",
-        choices: ["Manager", "Engineer", "Intern", "No more employees to add."]
+        choices: ["Manager", "Engineer", "Intern", "No more members to add."]
     }]).then(function (userInput) {
         switch(userInput.addEmployeePrompt) {
           case "Manager":
